@@ -47,11 +47,11 @@ def generate_representations(data: Dict, minimum_word_frequency: int = 5) -> Dic
         updated_data.append(entry.copy())
 
     # 2. Create the count vectors.
-    print("Creating the one-hot representation...")
+    print("Creating the Count representation...")
     vectorizer = CountVectorizer(min_df=minimum_word_frequency)
     one_hot_representation = vectorizer.fit_transform(corpus)
     vocab = vectorizer.vocabulary_
-    save_embeddings_and_vocab(one_hot_representation, vocab, "onehot")
+    save_embeddings_and_vocab(one_hot_representation, vocab, "count")
 
     # 3. Create the tf-idf representation of the ingredients.
     print("Creating the tf-idf representation...")
