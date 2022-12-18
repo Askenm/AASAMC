@@ -133,3 +133,4 @@ dmypy.json
 /wandb
 
 !/data/icpc_icd10_mapping.csv
+.DS_Store
