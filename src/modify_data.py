@@ -10,21 +10,23 @@ import pandas as pd
 data = pd.read_json("data/raw/train.json")
 
 # keep only ingredients that appear more than 20 times
-ingredient_counts = (
-    data.ingredients.apply(pd.Series).stack().value_counts()
-)
+ingredient_counts = data.ingredients.apply(pd.Series).stack().value_counts()
 ingredients_to_keep = ingredient_counts[ingredient_counts > 20].index
 modified_ingredients = data[
     data.ingredients.apply(lambda x: set(x).issubset(ingredients_to_keep))
 ]
-print(
-    "#1 :Lines went from {} to {}".format(len(data), len(modified_ingredients))
-)
+print("#1 :Lines went from {} to {}".format(len(data), len(modified_ingredients)))
 
 # keep only top 10 cuisines
 top_10_cuisines = modified_ingredients.cuisine.value_counts().index[:10]
-modified_cuisines = modified_ingredients[modified_ingredients.cuisine.isin(top_10_cuisines)]
-print("#2 : Lines went from {} to {}".format(len(modified_ingredients), len(modified_cuisines)))
+modified_cuisines = modified_ingredients[
+    modified_ingredients.cuisine.isin(top_10_cuisines)
+]
+print(
+    "#2 : Lines went from {} to {}".format(
+        len(modified_ingredients), len(modified_cuisines)
+    )
+)
 
 # remove "salt" from ingredients
 modified_cuisines.ingredients = modified_cuisines.ingredients.apply(
