@@ -1,5 +1,5 @@
 Clustering Method,Adjusted Rand Index,Adjusted Mutual Info Score
 KMeans,0.9087939960390535,0.9038208073745453
 Agglomerative Clustering,0.8235455511986556,0.8074744005290694
-Agglomerative Clustering,0.0,0.0
+DBSCAN Clustering,0.0,0.0
 Gaussian Mixture,0.9158702695170524,0.9064073000754541

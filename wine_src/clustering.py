@@ -1,5 +1,6 @@
 from sklearn.datasets import load_wine
 import pandas as pd
+import numpy as np
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -78,7 +79,7 @@ score_frame['Adjusted Mutual Info Score'].append( adjusted_mutual_info_score(y_t
 dbscan = DBSCAN(eps=0.5, min_samples=5, metric='euclidean')
 dbscan.fit(X_train)
 y_pred = dbscan.fit_predict(X_test)
-score_frame['Clustering Method'].append("Agglomerative Clustering")
+score_frame['Clustering Method'].append("DBSCAN Clustering")
 score_frame['Adjusted Rand Index'].append( adjusted_rand_score(y_test, y_pred))
 score_frame['Adjusted Mutual Info Score'].append(adjusted_mutual_info_score(y_test, y_pred))
 
@@ -139,3 +140,59 @@ ax[1,0].legend()
 ax[1,1].legend()
 
 plt.savefig(vis_path+"plots.png")
+
+
+
+
+# Calculate the performance of each clustering methods for each number of components using pca
+from sklearn.cluster import KMeans, AgglomerativeClustering
+from sklearn.mixture import GaussianMixture
+methods = [KMeans, AgglomerativeClustering, GaussianMixture]
+method_names = ['KMeans', 'Agglomerative Clustering', 'Gaussian Mixture']
+n_components = range(1, 13)
+scores = []
+for method, method_name in zip(methods, method_names):
+    for n in n_components:
+        pca = PCA(n_components=n)
+        X_train_pca = pca.fit_transform(X_train)
+        X_test_pca = pca.transform(X_test)
+        if method_name == 'Agglomerative Clustering':
+            cluster = method(n_clusters=3)
+            y_pred = cluster.fit_predict(X_test_pca)
+        elif method_name == 'Gaussian Mixture':
+            cluster = method(n_components=3, random_state=42)
+            cluster.fit(X_train_pca)
+            y_pred = cluster.predict(X_test_pca)
+        else:
+            cluster = method(n_clusters=3, random_state=42)
+            cluster.fit(X_train_pca)
+            y_pred = cluster.predict(X_test_pca)
+        score = adjusted_rand_score(y_test, y_pred)
+        scores.append([method_name, n, score])
+
+
+
+# PCA: Plot the explained variance ratio
+pca = PCA()
+pca.fit(X_train)
+fig, ax = plt.subplots(figsize=(16, 9))
+
+plt.xlabel('Number of Components')
+plt.ylabel('performance of clustering methods')
+
+# plot the performance of each clustering methods for each number of components using pca
+scores = pd.DataFrame(scores, columns=['method', 'n_components', 'score'])
+import seaborn as sns
+
+
+pca_frame = pd.DataFrame({'n_components':range(1, 14),'Explained Variance':pca.explained_variance_ratio_.cumsum()})
+ax2 = plt.twinx()
+ax2.set_yticks(np.linspace(ax2.get_yticks()[0], ax2.get_yticks()[-1], len(ax.get_yticks())))
+sns.lineplot(data=pca_frame['Explained Variance'],color='#6d904f', ax=ax2,marker='o', linestyle='--',alpha = 0.95,linewidth = 2.5)
+sns.lineplot(x='n_components', y='score', hue='method', data=scores,alpha = 0.65,linewidth = 2.5)
+plt.legend(loc='lower left')
+
+plt.ylim([0,1.1])
+
+
+plt.savefig(vis_path+"PCA_explained_variance.png")
