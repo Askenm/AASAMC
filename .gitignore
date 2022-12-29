@@ -134,3 +134,6 @@ dmypy.json
 
 !/data/icpc_icd10_mapping.csv
 .DS_Store
+
+
+wine_src/Descriptive Statistics.ipynb
