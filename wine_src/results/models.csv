@@ -1,73 +1,469 @@
-distribution    ,datatype ,n_components ,mutual_information
-GaussianMixture ,scaled   ,           3 ,0.9287722796138398
-KMeans          ,scaled   ,           3 ,0.9025879310403462
-GaussianMixture ,scaled   ,           4 ,0.8463259310480064
-gamma           ,raw      ,           3 ,0.8367363353573777
-lognormal       ,raw      ,           4 ,0.8331222863746942
-gamma           ,raw      ,           4 ,0.8316268272430658
-lognormal       ,raw      ,           3 ,0.824070922935987
-normal          ,scaled   ,           3 ,0.8095325395670174
-normal          ,raw      ,           3 ,0.8086689272599467
-lognormal       ,raw      ,           5 ,0.8047159463635563
-KMeans          ,scaled   ,           4 ,0.7968227104722807
-gamma           ,raw      ,           5 ,0.7854763357168947
-normal          ,raw      ,           4 ,0.7586701855765027
-normal          ,scaled   ,           4 ,0.7511356340993482
-KMeans          ,scaled   ,           5 ,0.7446825305351871
-GaussianMixture ,scaled   ,           5 ,0.7441915695052159
-normal          ,raw      ,           5 ,0.7192370318826113
-GaussianMixture ,scaled   ,           6 ,0.7132241302758126
-lognormal       ,raw      ,           6 ,0.6981667921529442
-gamma           ,raw      ,           6 ,0.6887249653127601
-KMeans          ,scaled   ,           6 ,0.6855899865468542
-normal          ,raw      ,           6 ,0.6806355350419152
-lognormal       ,raw      ,           2 ,0.6578794507164529
-multinormal     ,scaled   ,           3 ,0.6359830871778428
-normal          ,scaled   ,           5 ,0.6345349634523739
-gamma           ,raw      ,           2 ,0.6124027268153932
-normal          ,scaled   ,           6 ,0.5946768554764988
-multinormal     ,raw      ,           2 ,0.5915605578850752
-GaussianMixture ,raw      ,           2 ,0.5832944285456722
-GaussianMixture ,raw      ,           3 ,0.5432038507526303
-GaussianMixture ,scaled   ,           2 ,0.5384816719422978
-multinormal     ,raw      ,           3 ,0.527854739353996
-multinormal     ,scaled   ,           4 ,0.527434157744051
-multinormal     ,scaled   ,           2 ,0.5256571278125959
-normal          ,raw      ,           2 ,0.5147409853043392
-normal          ,scaled   ,           2 ,0.5026784136435519
-KMeans          ,scaled   ,           2 ,0.47783272743576183
-GaussianMixture ,raw      ,           4 ,0.46471761162642156
-KMeans          ,raw      ,           3 ,0.4356262820121256
-GaussianMixture ,raw      ,           5 ,0.43053626189931643
-KMeans          ,raw      ,           2 ,0.4210163059258629
-GaussianMixture ,raw      ,           6 ,0.408345026010423
-multinormal     ,scaled   ,           5 ,0.38873240636756035
-KMeans          ,raw      ,           4 ,0.38661796667855974
-KMeans          ,raw      ,           5 ,0.38373811346987385
-multinormal     ,raw      ,           4 ,0.3645505828421414
-KMeans          ,raw      ,           6 ,0.3500302149339533
-multinormal     ,scaled   ,           6 ,0.2866510698184147
-multinormal     ,raw      ,           5 ,0.24716355943897714
-multinormal     ,raw      ,           6 ,0.17812784809704404
-multinormal     ,scaled   ,           1 ,0.0
-normal          ,raw      ,           1 ,0.0
-normal          ,scaled   ,           1 ,0.0
-GaussianMixture ,raw      ,           1 ,0.0
-multinormal     ,raw      ,           1 ,0.0
-lognormal       ,scaled   ,           6 ,0.0
-GaussianMixture ,scaled   ,           1 ,0.0
-KMeans          ,raw      ,           1 ,0.0
-KMeans          ,scaled   ,           1 ,0.0
-gamma           ,raw      ,           1 ,0.0
-gamma           ,scaled   ,           1 ,0.0
-gamma           ,scaled   ,           2 ,0.0
-gamma           ,scaled   ,           3 ,0.0
-gamma           ,scaled   ,           4 ,0.0
-gamma           ,scaled   ,           5 ,0.0
-gamma           ,scaled   ,           6 ,0.0
-lognormal       ,scaled   ,           1 ,0.0
-lognormal       ,scaled   ,           2 ,0.0
-lognormal       ,scaled   ,           3 ,0.0
-lognormal       ,scaled   ,           4 ,0.0
-lognormal       ,scaled   ,           5 ,0.0
-lognormal       ,raw      ,           1 ,0.0
+distribution,datatype,n_components,mutual_information
+KMeans,pca_10,3,0.9092002152655273
+KMeans,scaled,3,0.9025087509820039
+KMeans,pca_8,3,0.8991637645336865
+KMeans,pca_7,3,0.8977235925970587
+KMeans,pca_9,3,0.8976581375894302
+KMeans,pca_6,3,0.8972945839567343
+KMeans,pca_11,3,0.8943667648016141
+normal,pca_2,3,0.8849104284179068
+KMeans,pca_5,3,0.8840602207838761
+KMeans,pca_2,3,0.8763594135184983
+KMeans,pca_3,3,0.8557424382055899
+normal,pca_10,4,0.8554195088319703
+normal,pca_3,3,0.854242409154315
+normal,pca_8,4,0.8502294694229665
+normal,pca_11,4,0.8482398237058926
+KMeans,pca_4,3,0.8461461730645862
+normal,pca_9,4,0.8425501921598826
+gamma,raw,3,0.8414755620435567
+normal,pca_10,3,0.8390743118874282
+normal,pca_6,3,0.8385239646675832
+lognormal,raw,4,0.8370859049654359
+gamma,raw,4,0.8327075226699403
+normal,pca_4,3,0.8289615124874232
+normal,scaled,3,0.8280539071460072
+multinormal,pca_2,3,0.8244089146162783
+normal,raw,3,0.8217907609181005
+normal,pca_7,4,0.8200995565869581
+normal,pca_5,3,0.8148554233826846
+lognormal,raw,3,0.8146177383202804
+multinormal,pca_3,3,0.8136459682965922
+normal,pca_7,3,0.8109666758503348
+normal,pca_6,4,0.8084112630863628
+normal,pca_7,5,0.8083559633952471
+KMeans,pca_10,4,0.8070863219710802
+normal,pca_9,3,0.8020184979436841
+normal,pca_8,3,0.8009158287067648
+KMeans,pca_9,4,0.8006651558669159
+normal,pca_11,3,0.8001317486961175
+normal,pca_5,4,0.7977293763142691
+normal,pca_3,4,0.7967527701705851
+normal,pca_8,5,0.7967413123326995
+KMeans,pca_7,4,0.792667686333199
+KMeans,scaled,4,0.7890751554562481
+multinormal,pca_3,4,0.7890280258175292
+KMeans,pca_8,4,0.7889444170407507
+KMeans,pca_3,4,0.7875293479123158
+KMeans,pca_6,4,0.7868593135419637
+KMeans,pca_5,4,0.7815178408866578
+normal,pca_6,5,0.7814748643244478
+gamma,raw,5,0.7810779210832418
+normal,pca_11,5,0.7798676572217803
+normal,pca_9,5,0.7754117525506211
+normal,pca_10,5,0.7751289365577532
+normal,raw,4,0.7742648827328599
+multinormal,pca_4,3,0.7727675029375711
+lognormal,raw,5,0.7676972492650765
+normal,pca_5,5,0.7674842844629561
+multinormal,pca_5,3,0.762857475099136
+normal,pca_4,4,0.7611529528328909
+normal,scaled,4,0.7605805221107508
+KMeans,pca_11,5,0.7597769664725693
+KMeans,pca_11,4,0.7595706263263198
+KMeans,pca_2,4,0.7583806402554543
+KMeans,scaled,5,0.7567910547037967
+KMeans,pca_6,5,0.755203353404902
+GaussianMixture,pca_3,3,0.755047957466366
+KMeans,pca_5,5,0.753902755619192
+KMeans,pca_10,5,0.75349870610928
+KMeans,pca_9,5,0.7502782140816147
+normal,pca_11,6,0.7499223901809631
+lognormal,raw,6,0.7478802614238792
+normal,pca_2,4,0.7464571796687615
+KMeans,pca_4,4,0.7457212804838119
+KMeans,pca_7,5,0.744299885411406
+multinormal,pca_2,4,0.7441612839390143
+KMeans,pca_8,5,0.7410534249077018
+normal,raw,5,0.7404837414801823
+normal,pca_6,6,0.7392260947859913
+multinormal,pca_4,4,0.7343770665153204
+multinormal,pca_5,4,0.7257105698065638
+multinormal,pca_3,5,0.7239567994687521
+normal,pca_9,6,0.7168579014833424
+multinormal,pca_6,5,0.7162802981723256
+KMeans,pca_4,5,0.7142623066774575
+GaussianMixture,pca_3,4,0.7136907780257602
+multinormal,pca_6,4,0.7126860734127979
+normal,pca_10,6,0.711862419265814
+normal,raw,6,0.7105168916529349
+KMeans,pca_11,6,0.7092422899367008
+normal,pca_4,5,0.7074276303815306
+KMeans,pca_9,6,0.706008534583535
+multinormal,pca_7,3,0.7038229055124801
+KMeans,scaled,6,0.7028611964747014
+multinormal,pca_4,5,0.6980692507404912
+gamma,raw,6,0.6979600934319252
+multinormal,scaled,3,0.6967090760147844
+multinormal,pca_7,4,0.6945305296488393
+KMeans,pca_8,6,0.6924954675044543
+GaussianMixture,pca_3,5,0.6922161096718826
+KMeans,pca_7,6,0.6920084593482037
+multinormal,pca_2,5,0.6918218160620064
+KMeans,pca_3,5,0.6897692116430576
+KMeans,pca_6,6,0.6883288826772707
+KMeans,pca_10,6,0.6838690307963138
+KMeans,pca_2,5,0.6836701438535158
+GaussianMixture,pca_4,4,0.6824292913078747
+normal,pca_2,5,0.6803424420301085
+multinormal,pca_6,3,0.6786734459514067
+multinormal,pca_5,5,0.6752680579886327
+KMeans,pca_5,6,0.6750006566435093
+multinormal,pca_10,3,0.6742310113020644
+lognormal,raw,2,0.6738173254581918
+normal,pca_3,5,0.6720540761499734
+multinormal,pca_3,6,0.6716018189287646
+multinormal,pca_9,4,0.6682834884789529
+multinormal,pca_2,6,0.6677741586584736
+normal,scaled,5,0.6637348464493554
+multinormal,pca_4,6,0.6628148805623681
+GaussianMixture,pca_4,3,0.6627942942239425
+GaussianMixture,pca_2,5,0.6617040135222058
+GaussianMixture,pca_2,4,0.6610484380843092
+normal,pca_5,6,0.6601415360182697
+multinormal,pca_8,3,0.6598921108154355
+GaussianMixture,pca_3,6,0.6554200287779707
+normal,pca_7,6,0.6548994890496901
+multinormal,pca_9,3,0.6527059325026521
+multinormal,pca_6,6,0.6448408226921748
+multinormal,pca_8,4,0.6438002184935606
+KMeans,pca_3,6,0.6406214430132237
+KMeans,pca_4,6,0.6391871077378016
+GaussianMixture,pca_4,5,0.6372540621908516
+multinormal,pca_10,4,0.6358555229417077
+GaussianMixture,pca_2,6,0.6320068978335395
+normal,pca_8,6,0.6305914665116532
+KMeans,pca_2,6,0.6239212033886845
+gamma,raw,2,0.6216749675763331
+normal,pca_4,6,0.621520432752949
+GaussianMixture,pca_4,6,0.6212057564474567
+multinormal,pca_11,3,0.6207966917921756
+multinormal,pca_5,6,0.6203814605184352
+multinormal,pca_7,5,0.609408037111327
+multinormal,raw,2,0.6091629719817724
+normal,scaled,6,0.6087574063116552
+GaussianMixture,pca_2,3,0.6011059024640368
+normal,pca_2,6,0.5915749050372752
+multinormal,pca_8,5,0.5909465653797181
+normal,pca_3,6,0.5816981942375286
+KMeans,pca_1,4,0.5716484618406781
+multinormal,pca_9,5,0.5682854300375331
+multinormal,scaled,2,0.5616432379042278
+normal,pca_8,2,0.5569576661557919
+multinormal,pca_1,3,0.5554609762135395
+normal,pca_10,2,0.5498989147019733
+normal,pca_1,4,0.5478779894738353
+normal,pca_6,2,0.5445436955142443
+multinormal,pca_1,4,0.5417572959867418
+multinormal,scaled,4,0.5414682277241601
+normal,pca_1,3,0.5383884836649983
+multinormal,pca_7,6,0.5377771258392071
+normal,pca_7,2,0.5367925748153
+multinormal,pca_11,2,0.5293631103248577
+KMeans,pca_1,3,0.5290962748764072
+multinormal,pca_10,2,0.5237740056011915
+normal,pca_1,5,0.5225793708615394
+normal,raw,2,0.521201602511939
+normal,pca_9,2,0.5201167905294711
+multinormal,pca_9,2,0.5172605877192752
+multinormal,pca_4,2,0.5163243471642557
+multinormal,pca_1,5,0.5161874838236975
+multinormal,pca_6,2,0.5159722776398146
+GaussianMixture,pca_5,3,0.5154535431474951
+normal,pca_11,2,0.5131327377768045
+multinormal,pca_11,4,0.5129205369615893
+KMeans,pca_1,5,0.5123682578696833
+GaussianMixture,pca_5,4,0.511907479217328
+multinormal,pca_3,2,0.5110894333985191
+normal,pca_2,2,0.5097651717020978
+GaussianMixture,pca_4,2,0.50675733902501
+GaussianMixture,pca_6,4,0.5044624461144657
+multinormal,pca_5,2,0.5043377984112168
+GaussianMixture,pca_5,5,0.5025142840977697
+GaussianMixture,pca_3,2,0.4985358277327892
+multinormal,pca_8,2,0.4964306606004358
+GaussianMixture,pca_6,2,0.49178676122410364
+multinormal,pca_8,6,0.48979269682969734
+normal,pca_3,2,0.4893185610033944
+multinormal,pca_2,2,0.4888401427150957
+multinormal,pca_7,2,0.4878760493793316
+multinormal,pca_10,5,0.4850079381103128
+normal,scaled,2,0.4846006098245311
+GaussianMixture,pca_2,2,0.4844571145894372
+GaussianMixture,pca_5,2,0.4844050513917084
+multinormal,raw,3,0.4842780930617913
+normal,pca_1,6,0.4842383430411608
+normal,pca_4,2,0.4831259335747827
+KMeans,scaled,2,0.48015241003422127
+multinormal,pca_1,6,0.4797255497166238
+GaussianMixture,pca_6,3,0.4790868441841054
+normal,pca_5,2,0.47818446272452597
+KMeans,pca_8,2,0.4771713197145735
+KMeans,pca_11,2,0.4762202550975508
+KMeans,pca_2,2,0.4758564007922205
+KMeans,pca_6,2,0.47528297319930424
+multinormal,pca_11,5,0.4746823297781102
+KMeans,pca_10,2,0.47438710644858795
+KMeans,pca_3,2,0.47427778934524173
+KMeans,pca_9,2,0.4740958838034512
+KMeans,pca_4,2,0.47313646554723815
+GaussianMixture,pca_5,6,0.4730887395422539
+KMeans,pca_7,2,0.47263992353757583
+KMeans,pca_5,2,0.4720581067933828
+normal,pca_1,2,0.4705461910040626
+multinormal,pca_1,2,0.46937504117169493
+KMeans,pca_1,2,0.4678177086633389
+GaussianMixture,pca_7,2,0.4601970549562059
+KMeans,pca_1,6,0.45964155167423615
+GaussianMixture,pca_1,6,0.45789385062402393
+KMeans,raw,2,0.4475648082474982
+GaussianMixture,pca_6,5,0.4433543032580762
+GaussianMixture,pca_8,2,0.4375626605410895
+GaussianMixture,pca_6,6,0.42307243889125934
+KMeans,raw,3,0.41689373962475296
+GaussianMixture,pca_7,3,0.41040533194373213
+GaussianMixture,pca_9,2,0.40993827751820194
+GaussianMixture,pca_7,4,0.4055054308499059
+GaussianMixture,pca_10,2,0.3980377341899891
+KMeans,raw,6,0.38716467104273433
+GaussianMixture,pca_1,4,0.38525228234966735
+GaussianMixture,pca_1,3,0.38262162855114784
+KMeans,raw,5,0.3824336986248608
+multinormal,pca_9,6,0.3821219239405571
+GaussianMixture,pca_9,3,0.3816245690624697
+GaussianMixture,pca_8,3,0.38155877165523616
+GaussianMixture,pca_1,5,0.3794168307385868
+GaussianMixture,pca_11,2,0.3781485757438298
+KMeans,raw,4,0.37405284792343585
+multinormal,pca_10,6,0.3732473495240209
+GaussianMixture,pca_7,5,0.37028503683541947
+GaussianMixture,pca_7,6,0.36866036508334077
+GaussianMixture,pca_8,4,0.36440683414233593
+GaussianMixture,pca_9,4,0.3550491708911657
+GaussianMixture,pca_10,3,0.3522553041447399
+multinormal,raw,4,0.3453906485810055
+GaussianMixture,raw,2,0.34298927149258546
+multinormal,scaled,5,0.3421670705934243
+GaussianMixture,scaled,2,0.3336613390820539
+GaussianMixture,pca_8,5,0.331095208488714
+GaussianMixture,pca_11,3,0.3286876139858875
+GaussianMixture,pca_8,6,0.3239832289636535
+multinormal,pca_11,6,0.3219809048775617
+GaussianMixture,pca_9,5,0.3102600263368182
+GaussianMixture,pca_10,4,0.3076466159527842
+GaussianMixture,pca_10,5,0.3032566173412071
+GaussianMixture,pca_9,6,0.29977221428166534
+GaussianMixture,pca_1,2,0.29249301251808235
+GaussianMixture,pca_11,4,0.2888466033355677
+GaussianMixture,raw,3,0.28857490068010594
+multinormal,raw,5,0.271832880801393
+GaussianMixture,scaled,3,0.2683369512735904
+GaussianMixture,pca_10,6,0.261697688539366
+GaussianMixture,pca_11,5,0.25605657246449043
+GaussianMixture,pca_11,6,0.2468962261928577
+GaussianMixture,raw,4,0.23847635124158623
+GaussianMixture,scaled,5,0.22378867580653466
+GaussianMixture,scaled,4,0.22090413525792887
+multinormal,scaled,6,0.20601172365853052
+GaussianMixture,raw,5,0.19955191600692704
+GaussianMixture,raw,6,0.1920110366892812
+GaussianMixture,scaled,6,0.16413988443779967
+multinormal,raw,6,0.1614471621377001
+multinormal,pca_4,1,0.0
+lognormal,scaled,6,0.0
+multinormal,pca_9,1,0.0
+normal,pca_8,1,0.0
+multinormal,raw,1,0.0
+multinormal,pca_1,1,0.0
+lognormal,scaled,4,0.0
+lognormal,scaled,5,0.0
+multinormal,pca_8,1,0.0
+lognormal,scaled,3,0.0
+lognormal,scaled,2,0.0
+lognormal,scaled,1,0.0
+multinormal,scaled,1,0.0
+normal,pca_10,1,0.0
+normal,pca_11,1,0.0
+normal,pca_2,1,0.0
+multinormal,pca_10,1,0.0
+normal,raw,1,0.0
+normal,pca_6,1,0.0
+multinormal,pca_7,1,0.0
+normal,pca_3,1,0.0
+multinormal,pca_11,1,0.0
+multinormal,pca_6,1,0.0
+normal,pca_4,1,0.0
+normal,pca_9,1,0.0
+normal,scaled,1,0.0
+multinormal,pca_2,1,0.0
+normal,pca_7,1,0.0
+multinormal,pca_5,1,0.0
+normal,pca_5,1,0.0
+multinormal,pca_3,1,0.0
+normal,pca_1,1,0.0
+GaussianMixture,pca_1,1,0.0
+lognormal,raw,1,0.0
+gamma,pca_4,5,0.0
+gamma,pca_4,3,0.0
+gamma,pca_4,2,0.0
+gamma,pca_4,1,0.0
+gamma,pca_3,6,0.0
+gamma,pca_3,5,0.0
+gamma,pca_3,4,0.0
+gamma,pca_3,3,0.0
+gamma,pca_3,2,0.0
+gamma,pca_3,1,0.0
+gamma,pca_2,6,0.0
+gamma,pca_2,5,0.0
+gamma,pca_2,4,0.0
+gamma,pca_2,3,0.0
+gamma,pca_2,2,0.0
+gamma,pca_2,1,0.0
+gamma,pca_11,6,0.0
+gamma,pca_11,5,0.0
+gamma,pca_4,4,0.0
+gamma,pca_4,6,0.0
+gamma,pca_8,2,0.0
+gamma,pca_5,1,0.0
+gamma,pca_7,6,0.0
+gamma,pca_7,5,0.0
+gamma,pca_7,4,0.0
+gamma,pca_7,3,0.0
+gamma,pca_7,2,0.0
+gamma,pca_7,1,0.0
+gamma,pca_6,6,0.0
+gamma,pca_6,5,0.0
+gamma,pca_6,4,0.0
+gamma,pca_6,3,0.0
+gamma,pca_6,2,0.0
+gamma,pca_6,1,0.0
+gamma,pca_5,6,0.0
+gamma,pca_5,5,0.0
+gamma,pca_5,4,0.0
+gamma,pca_5,3,0.0
+gamma,pca_5,2,0.0
+gamma,pca_11,4,0.0
+gamma,pca_11,3,0.0
+gamma,pca_11,2,0.0
+gamma,pca_11,1,0.0
+KMeans,pca_3,1,0.0
+KMeans,pca_2,1,0.0
+KMeans,pca_11,1,0.0
+KMeans,pca_10,1,0.0
+KMeans,pca_1,1,0.0
+GaussianMixture,scaled,1,0.0
+GaussianMixture,raw,1,0.0
+GaussianMixture,pca_9,1,0.0
+GaussianMixture,pca_8,1,0.0
+GaussianMixture,pca_7,1,0.0
+GaussianMixture,pca_6,1,0.0
+GaussianMixture,pca_5,1,0.0
+GaussianMixture,pca_4,1,0.0
+GaussianMixture,pca_3,1,0.0
+GaussianMixture,pca_2,1,0.0
+GaussianMixture,pca_11,1,0.0
+GaussianMixture,pca_10,1,0.0
+KMeans,pca_4,1,0.0
+KMeans,pca_5,1,0.0
+KMeans,pca_6,1,0.0
+gamma,pca_1,5,0.0
+gamma,pca_10,6,0.0
+gamma,pca_10,5,0.0
+gamma,pca_10,4,0.0
+gamma,pca_10,3,0.0
+gamma,pca_10,2,0.0
+gamma,pca_10,1,0.0
+gamma,pca_1,6,0.0
+gamma,pca_1,4,0.0
+KMeans,pca_7,1,0.0
+gamma,pca_1,3,0.0
+gamma,pca_1,2,0.0
+gamma,pca_1,1,0.0
+KMeans,scaled,1,0.0
+KMeans,raw,1,0.0
+KMeans,pca_9,1,0.0
+KMeans,pca_8,1,0.0
+gamma,pca_8,1,0.0
+gamma,pca_8,3,0.0
+lognormal,pca_9,6,0.0
+lognormal,pca_6,4,0.0
+lognormal,pca_6,2,0.0
+lognormal,pca_6,1,0.0
+lognormal,pca_5,6,0.0
+lognormal,pca_5,5,0.0
+lognormal,pca_5,4,0.0
+lognormal,pca_5,3,0.0
+lognormal,pca_5,2,0.0
+lognormal,pca_5,1,0.0
+lognormal,pca_4,6,0.0
+lognormal,pca_4,5,0.0
+lognormal,pca_4,4,0.0
+lognormal,pca_4,3,0.0
+lognormal,pca_4,2,0.0
+lognormal,pca_4,1,0.0
+lognormal,pca_3,6,0.0
+lognormal,pca_3,5,0.0
+lognormal,pca_3,4,0.0
+lognormal,pca_6,3,0.0
+lognormal,pca_6,5,0.0
+gamma,pca_8,4,0.0
+lognormal,pca_6,6,0.0
+lognormal,pca_9,5,0.0
+lognormal,pca_9,4,0.0
+lognormal,pca_9,3,0.0
+lognormal,pca_9,2,0.0
+lognormal,pca_9,1,0.0
+lognormal,pca_8,6,0.0
+lognormal,pca_8,5,0.0
+lognormal,pca_8,4,0.0
+lognormal,pca_8,3,0.0
+lognormal,pca_8,2,0.0
+lognormal,pca_8,1,0.0
+lognormal,pca_7,6,0.0
+lognormal,pca_7,5,0.0
+lognormal,pca_7,4,0.0
+lognormal,pca_7,3,0.0
+lognormal,pca_7,2,0.0
+lognormal,pca_7,1,0.0
+lognormal,pca_3,3,0.0
+lognormal,pca_3,2,0.0
+lognormal,pca_3,1,0.0
+lognormal,pca_2,6,0.0
+lognormal,pca_1,3,0.0
+lognormal,pca_1,2,0.0
+gamma,scaled,6,0.0
+gamma,scaled,5,0.0
+gamma,scaled,4,0.0
+gamma,scaled,3,0.0
+gamma,scaled,2,0.0
+gamma,scaled,1,0.0
+gamma,raw,1,0.0
+gamma,pca_9,6,0.0
+gamma,pca_9,5,0.0
+gamma,pca_9,4,0.0
+gamma,pca_9,3,0.0
+gamma,pca_9,2,0.0
+gamma,pca_9,1,0.0
+gamma,pca_8,6,0.0
+gamma,pca_8,5,0.0
+lognormal,pca_1,4,0.0
+lognormal,pca_1,5,0.0
+lognormal,pca_1,6,0.0
+lognormal,pca_11,4,0.0
+lognormal,pca_2,5,0.0
+lognormal,pca_2,4,0.0
+lognormal,pca_2,3,0.0
+lognormal,pca_2,2,0.0
+lognormal,pca_2,1,0.0
+lognormal,pca_11,6,0.0
+lognormal,pca_11,5,0.0
+lognormal,pca_11,3,0.0
+lognormal,pca_10,1,0.0
+lognormal,pca_11,2,0.0
+lognormal,pca_11,1,0.0
+lognormal,pca_10,6,0.0
+lognormal,pca_10,5,0.0
+lognormal,pca_10,4,0.0
+lognormal,pca_10,3,0.0
+lognormal,pca_10,2,0.0
+lognormal,pca_1,1,0.0
