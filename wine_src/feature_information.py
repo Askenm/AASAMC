@@ -6,6 +6,7 @@ from collections import defaultdict
 import mifs
 
 # http://lcsl.mit.edu/courses/regml/regml2017/slides/LeoLefakis.pdf
+# https://github.com/danielhomola/mifs
 
 wine = load_wine()
 
